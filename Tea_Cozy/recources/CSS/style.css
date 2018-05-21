@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 69px; /* Not sure if i did it correctly... */
+}
+
+header {
+  display: flex;
+  position: fixed;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+  background-color: black;
+}
+
+header img {
+  height: 50px;
+  margin: 0px 10px;
+}
+
+nav {
+  flex-grow: 1;
+  justify-content: space-around;
+  text-align: right;
+  margin: 0px 10px;
+}
+
+nav span {
+  margin: 0px 15px;
+}
+
+a {
+  color: seashell;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 700px;
+  background-image: url(../Images/img-mission-background.jpg);
+  margin: 0px auto 50px auto;
+}
+
+.blackMission {
+  width: 100%;
+  text-align: center; /* I think could just put one "text-aling" in body, but realised it too late... */
+  background-color: black;
+}
+
+.TasteBlock {
+  width: 1000px;
+  height: 700px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0px auto 50px auto;
+
+}
+
+.Images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Jesus, i really stopped on that one for some reason. First i thought why flex-wrap is not working, but then realisez (i guess) it's because i put that line in .TasteBlock.
+  Before having that having 2 div blocks inside it (1 for h2, h4 and one for iamges...). I guess it was only "flexing" those 2 boxes (divs), rather than images inside @_@ */
+}
+
+.ImageBlock img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+.ImageBlock h4 {
+  margin-top: 10px;
+}
+
+.Locations {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 1200px;
+  height: 500px;
+  background-image: url(../images/img-locations-background.jpg);
+  margin: 50px auto 0px auto;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  margin: 15px 40px;
+  background-color: black;
+  opacity: 1;
+  width: 300px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h2 {
+  margin-top: 10px;
+}
+
+.copyright {
+  margin: 30px 0px 10px 20px;
+}
